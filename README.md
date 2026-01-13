@@ -1,5 +1,5 @@
-# 📊 E-Ticaret Satış Analizi  
-**PostgreSQL & Power BI**
+# 📊 E-Ticaret Satış Analizi - PostgreSQL & Power BI
+
 
 ## 🎯 Proje Amacı
 Bu projenin amacı, bir e-ticaret platformuna ait satış verilerini analiz ederek  
@@ -109,5 +109,4 @@ konularında uçtan uca bir çalışma gerçekleştirilmiştir.
 
 ---
 
-📌 **Not:**  
-Bu proje portföy ve eğitim amaçlı hazırlanmıştır.
+
