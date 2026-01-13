@@ -1,99 +1,113 @@
-📈 Power BI Üzerinde Yapılan Analizler
-🔹 Genel KPI Analizleri
+# 📊 E-Ticaret Satış Analizi  
+**PostgreSQL & Power BI**
 
+## 🎯 Proje Amacı
+Bu projenin amacı, bir e-ticaret platformuna ait satış verilerini analiz ederek  
+**ürün**, **kategori** ve **zaman** bazlı performansı incelemek,  
+**kârlılığı ölçmek** ve iş kararlarını destekleyecek içgörüler üretmektir.
+
+---
+
+## 🛠 Kullanılan Teknolojiler
+- **PostgreSQL** – Veri tabanı ve SQL analizleri
+- **Power BI** – Veri modelleme, DAX ve görselleştirme
+- **SQL** – JOIN, agregasyon ve hesaplamalar
+
+---
+
+## 🗄️ Veri Kaynağı & Modelleme
+Veriler **PostgreSQL** üzerinde modellenmiş ve **Power BI**’a bağlanmıştır.
+
+### PostgreSQL Üzerinde Yapılan İşlemler
+- Tablolar arası **Primary Key / Foreign Key** ilişkilerinin kurulması
+- Satış, ürün ve kategori tablolarının **JOIN** işlemleri ile birleştirilmesi
+- **Toplam ciro**, **toplam maliyet** ve **kâr** hesaplamaları
+- Power BI analizleri için optimize edilmiş SQL sorguları
+
+---
+
+## 📈 Power BI Üzerinde Yapılan Analizler
+
+### 🔹 KPI (Temel Göstergeler)
 Dashboard üzerinde aşağıdaki temel metrikler hesaplanmıştır:
+- **Toplam Ciro**
+- **Toplam Sipariş Sayısı**
+- **Ortalama Sepet Tutarı**
+- **Kâr Marjı (%)**
 
-Toplam Ciro
+Bu göstergeler, satış performansının genel durumunu hızlıca analiz etmeyi sağlar.
 
-Toplam Sipariş Sayısı
+---
 
-Ortalama Sepet Tutarı
+### 🔹 Ürün Bazlı Analizler
+- **Ürün adına göre Toplam Satılan Adet**
+- **Ürün adına göre Toplam Ciro**
+- En çok satan ürünler ile en çok ciro getiren ürünlerin karşılaştırılması
 
-Kâr Marjı (%)
+📌 Amaç:
+- Yüksek ciro sağlayan ürünleri belirlemek
+- Satış adedi yüksek fakat kârlılığı düşük ürünleri tespit etmek
 
-Bu göstergeler sayesinde satış performansının genel durumu hızlıca analiz edilebilmektedir.
+---
 
-🔹 Ürün Bazlı Analizler
-
-Ürün adına göre Toplam Satılan Adet
-
-Ürün adına göre Toplam Ciro
-
-En çok ciro getiren ve en çok satılan ürünlerin karşılaştırılması
-
-📌 Bu analiz ile:
-
-Yüksek ciro sağlayan ürünler
-
-Satış adedi yüksek olup kârlılığı düşük ürünler
-tespit edilmiştir.
-
-🔹 Kategori Bazlı Analizler
-
-Kategori bazında:
-
-Toplam Satış Geliri
-
-Toplam Maliyet
-
-Toplam Kâr
-
-Elektronik, Telefon ve Bilgisayar kategorilerinin performans karşılaştırması
+### 🔹 Kategori Bazlı Analizler
+- Kategori bazında:
+  - **Toplam Satış Geliri**
+  - **Toplam Maliyet**
+  - **Toplam Kâr**
+- Elektronik, Telefon ve Bilgisayar kategorilerinin performans karşılaştırması
 
 📌 Bu analiz, hangi kategorilerin kârlı veya zarar ettiğini net şekilde göstermektedir.
 
-🔹 Kârlılık Analizi
+---
 
-Ürün bazında Kâr Marjı (%) hesaplanmıştır
-
-Negatif kâr marjına sahip ürünler belirlenmiştir
+### 🔹 Kârlılık Analizi
+- Ürün bazında **Kâr Marjı (%)** hesaplanmıştır
+- **Negatif kâr marjına** sahip ürünler tespit edilmiştir
 
 📌 Bu sayede:
+- Zarar ettiren ürünler
+- Fiyatlandırma veya maliyet optimizasyonu gerektiren ürünler
+belirlenmiştir.
 
-Zarar ettiren ürünler
+---
 
-Fiyatlandırma veya maliyet optimizasyonu gerektiren ürünler
-analiz edilmiştir.
+### 🔹 Zaman Bazlı Analiz
+- **Ay ölçütüne göre Toplam Ciro**
+- Satışların dönemsel değişimi
 
-🔹 Zaman Bazlı Analiz
+📌 Satışların hangi dönemlerde yoğunlaştığı analiz edilmiştir.
 
-Ay ölçütüne göre Toplam Ciro
+---
 
-Satışların dönemsel değişimi
+### 🔹 Detaylı Tablo Analizi
+- Ürün, kategori, satış geliri, maliyet ve kâr marjı bilgilerini içeren tablo
+- Filtreleme ve sıralama ile detaylı inceleme imkânı
 
-📌 Bu analiz, satışların hangi dönemlerde yoğunlaştığını göstermektedir.
+---
 
-🔹 Detaylı Tablo Analizi
+## 📊 Öne Çıkan Bulgular
+- Genel satışlarda **negatif kâr marjı** tespit edilmiştir
+- Bazı ürünler yüksek satış adedine rağmen **zarar etmektedir**
+- **Bluetooth Kulaklık** ürünü toplam ciroda öne çıkmaktadır
+- Kategori bazında maliyetlerin satış gelirlerine oranla yüksek olduğu görülmüştür
 
-Ürün, kategori, satış geliri, maliyet ve kâr marjı bilgilerinin yer aldığı detaylı tablo
+---
 
-Filtreleme ve sıralama ile esnek analiz imkânı
-
-📊 Öne Çıkan Bulgular
-
-Toplam satışlarda negatif kâr marjı tespit edilmiştir.
-
-Bazı ürünler yüksek satış adedine rağmen zarar etmektedir.
-
-Bluetooth kulaklık ürünü toplam ciroda öne çıkmaktadır.
-
-Kategori bazında maliyetlerin, satış gelirlerine göre yüksek olduğu görülmüştür.
-
-🎯 Projenin Katkısı
-
+## 🎯 Projenin Kazanımları
 Bu proje ile:
+- **PostgreSQL & Power BI entegrasyonu**
+- **Business Intelligence bakış açısı**
+- KPI tasarımı ve yorumlanması
+- SQL ve DAX ile veri analizi
+konularında uçtan uca bir çalışma gerçekleştirilmiştir.
 
-SQL ve Power BI entegrasyonu
+---
 
-İş odaklı veri analizi
+## 📷 Dashboard Görünümü
+> Power BI raporuna ait ekran görüntüsü proje içerisinde yer almaktadır.
 
-KPI tasarımı
+---
 
-Görselleştirme ve yorumlama
-konularında uçtan uca bir Business Intelligence çalışması gerçekleştirilmiştir.
-
-📷 Dashboard Görünümü
-
-Power BI rapor ekran görüntüsü proje içerisinde paylaşılmıştır.
-
-📌 Not:
+📌 **Not:**  
+Bu proje portföy ve eğitim amaçlı hazırlanmıştır.
